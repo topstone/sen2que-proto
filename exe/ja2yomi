@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "sen_to_que_proto"
+
+sen = SenToQueProto::MecabReader.new("ja")
+sen.stdin
+sen.write_yomi
